@@ -1,5 +1,23 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ==========================================================================
+   ESTILOS GERAIS DA APLICAÇÃO (Reset & Layout Base)
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Flexbox no container principal com min-height: 100vh para empurrar o footer para o fim */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
